@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2017 Mercedes Sprinter 314d MWB Camper Van For Sale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
+            background: #fff;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            height: 85vh;
+            min-height: 500px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 3rem 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.5));
+            color: #fff;
+        }
+
+        .hero-overlay h1 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero-overlay .subtitle {
+            font-size: clamp(0.95rem, 2vw, 1.15rem);
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Key details bar */
+        .details-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px;
+            background: #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .details-bar .detail {
+            flex: 1;
+            min-width: 200px;
+            background: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .details-bar .detail .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #888;
+            margin-bottom: 0.25rem;
+        }
+
+        .details-bar .detail .value {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        /* Content */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .intro {
+            padding: 4rem 0 3rem;
+            font-size: 1.2rem;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Sections */
+        .section {
+            padding: 3.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.3rem;
+        }
+
+        .section .tagline {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #999;
+            margin-bottom: 1.5rem;
+        }
+
+        .section p {
+            color: #444;
+            font-size: 1.02rem;
+        }
+
+        .section p + p {
+            margin-top: 1rem;
+        }
+
+        /* Photo gallery */
+        .gallery {
+            padding: 3.5rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 4px;
+        }
+
+        .gallery-grid .photo {
+            aspect-ratio: 4/3;
+            background: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .gallery-grid .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid .photo img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(0,0,0,0.92);
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 2.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 1rem;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .lightbox-prev { left: 1rem; }
+        .lightbox-next { right: 1rem; }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #fafafa;
+        }
+
+        .cta h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta p {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .cta .price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta .location {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #bbb;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero { height: 60vh; min-height: 350px; }
+            .hero-overlay { padding: 2rem 1.25rem; }
+            .container { padding: 0 1.25rem; }
+            .intro { padding: 3rem 0 2rem; font-size: 1.05rem; }
+            .section { padding: 2.5rem 0; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero image -->
+    <div class="hero">
+        <!-- Replace src with your hero photo -->
+        <img src="photos/hero.jpg" alt="2017 Mercedes Sprinter 314d MWB Camper Van">
+        <div class="hero-overlay">
+            <h1>2017 Mercedes Sprinter 314d MWB</h1>
+            <div class="subtitle">A no-expense spared camper van conversion</div>
+        </div>
+    </div>
+
+    <!-- Key details -->
+    <div class="details-bar">
+        <div class="detail">
+            <div class="label">Price</div>
+            <div class="value">&pound;32,995</div>
+        </div>
+        <div class="detail">
+            <div class="label">Mileage</div>
+            <div class="value">54,000</div>
+        </div>
+        <div class="detail">
+            <div class="label">MOT &amp; Service</div>
+            <div class="value">New</div>
+        </div>
+        <div class="detail">
+            <div class="label">Location</div>
+            <div class="value">South Devon</div>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="container">
+        <p class="intro">A no-expense spared conversion focusing on safety, convenience, reliability and creating something that works as well for a large family as a couple on the road.</p>
+    </div>
+
+    <!-- Photo gallery -->
+    <div class="gallery">
+        <div class="gallery-grid">
+            <!-- Add your photos here. Example: -->
+            <!-- <div class="photo"><img src="photos/01.jpg" alt="Interior view"></div> -->
+            <!-- <div class="photo"><img src="photos/02.jpg" alt="Kitchen"></div> -->
+        </div>
+    </div>
+
+    <!-- Sections -->
+    <div class="container">
+
+        <div class="section">
+            <h2>Family</h2>
+            <div class="tagline">4 x Adult Sleeping Berth / 6 x Crash Tested Belted Seats</div>
+            <p>Can sleep and seat six at a push, five with relative ease. Searching for something suitable for two parents and two children I found very little. Most conversions look great but have neither beds nor travelling seats or have made extremely dubious design decisions to achieve this. Bolting rigid structure across the body creates stress (the van is designed to flex) and won't last and home-made seating can look nice but offers nothing in a collision.</p>
+            <p>For this van we constructed a floating upper bed that uses parallel walls bolted directly to the body. The bed can be raised and lowered to offer a true 2 x double bed. A RIB Altair crash tested seat below converts from offering three belted seats to a second double bed.</p>
+            <p>Given the six travelling seats I've used a roof mounted tent to travel with two adults and four children, or had my younger son sleep across the front seats which is also comfortable and workable. On this basis sleeps and drives six is achievable!</p>
+        </div>
+
+        <div class="section">
+            <h2>Insulation, Heating &amp; Ventilation</h2>
+            <div class="tagline">2kw diesel heater / excellent active ventilation</div>
+            <p>The van is fully insulated with high thermal grade materials &mdash; celotex under the floor, a synthetic flexible material on the walls and threaded into the beams behind an air gap and a thermal reflective barrier. A 2kw diesel heater with full controls (timer, thermostat etc) then works to keep the van toasty even in sub zero temperatures. Water and gas are internal so the van works fine in the snow.</p>
+            <p>Conversely in the summer the same insulation ensures the van doesn't get too hot and the Maxair fan pulls from the smaller, insect meshed, window positioned just above the bed to create strong, cooling airflow on high settings, or remove condensation set very low. We've camped from &minus;5&deg;C to 38&deg;C in comfort.</p>
+        </div>
+
+        <div class="section">
+            <h2>Kitchen</h2>
+            <div class="tagline">Dual hob and large fridge</div>
+            <p>A Dometic dual hob is fed by a Campingaz 907 gas cylinder below the counter. This is the most widely available option with refills in every European supermarket or garage and same in the UK. A cylinder lasts a long time but equally can be swapped out easily. The gas sits in a sealed, metal gas cupboard with ventilation at the bottom outside the van &mdash; an essential safety step.</p>
+            <p>The hob and sink give plenty of space to cook, there's kitchen lighting above and the Maxair fan ventilates effectively. There's a large Dometic 12v fridge that comfortably runs from the solar system with a freezer section. Water is from a tank behind the driver's seat and an electric tap pulls from this when opened. The sink drains externally and there's a greywater can stored under the back seats if you're parked where this needs to be captured.</p>
+        </div>
+
+        <div class="section">
+            <h2>Toilet</h2>
+            <p>There's a simple sealed toilet under the back seats that can be brought out at night or as needed and emptied when full into a normal toilet or waste discharge.</p>
+        </div>
+
+        <div class="section">
+            <h2>Electrics</h2>
+            <div class="tagline">Off-grid solar and large backup battery</div>
+            <p>No expense was spared on the electrical setup. All wiring is carefully laid and sheathed to ensure longevity. A 125Ah lithium battery runs everything, this is charged from the solar and also directly from the engine. Conversely it keeps the van battery charged should it need it.</p>
+            <p>There's a hook-up to charge from an external source, although we never needed this &mdash; the van will easily run 4+ days on solar with heating, lighting and fridge without driving or charging. There's an isolated internal mains socket from the hookup should you want it. There are dimmable 12v lights throughout and ample USB sockets to charge or run devices. The electrics have Bluetooth monitoring via an app. The electrics are all concealed with an easy to access panel if you wanted to add anything or modify anything.</p>
+        </div>
+
+        <div class="section">
+            <h2>Security</h2>
+            <div class="tagline">Deadbolts on the doors plus safe</div>
+            <p>Every door has an independent dead bolt alongside the normal central locking and concealed in the bottom cupboard is a floor mounted safe, this can be opened with a key but also with a code or a fingerprint. Perfect for cash, passports, spare keys etc. when exploring.</p>
+        </div>
+
+        <div class="section">
+            <h2>Storage</h2>
+            <p>There's a large locker over the cab, cupboards under and above the kitchen and through the living area. Under the main seat in both front and back are large storage areas and there's dry and wet storage (wetsuits etc) in the back under the bed. A huge Rhino roof rack means altogether you can take way more than you need with you on any trip. The second bed makes an excellent surfboard rack if travelling as a couple.</p>
+        </div>
+
+        <div class="section">
+            <h2>Driving</h2>
+            <p>54,000 miles and serviced comprehensively and annually with a new MOT. Cruise control for longer trips. Reversing camera for visibility. It drives great and is efficient for a vehicle this size. The cab and body have additional acoustic proofing to ensure it feels more like a car than a van.</p>
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Interested?</h2>
+        <p>Any inspection welcome</p>
+        <div class="price">&pound;32,995</div>
+        <div class="location">South Devon, UK</div>
+    </div>
+
+    <footer>
+        2017 Mercedes Sprinter 314d MWB Camper Van
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+        <img src="" alt="">
+    </div>
+
+    <script>
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = lightbox.querySelector('img');
+        const photos = document.querySelectorAll('.gallery-grid .photo img');
+        let currentIndex = 0;
+
+        photos.forEach((img, i) => {
+            img.addEventListener('click', () => {
+                currentIndex = i;
+                lbImg.src = img.src;
+                lbImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) lightbox.classList.remove('active');
+        });
+
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+            lbImg.src = photos[currentIndex].src;
+            lbImg.alt = photos[currentIndex].alt;
+        });
+
+        lightbox.querySelector('.lightbox-next').addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % photos.length;
+            lbImg.src = photos[currentIndex].src;
+            lbImg.alt = photos[currentIndex].alt;
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') lightbox.classList.remove('active');
+            if (e.key === 'ArrowLeft') lightbox.querySelector('.lightbox-prev').click();
+            if (e.key === 'ArrowRight') lightbox.querySelector('.lightbox-next').click();
+        });
+    </script>
+
+</body>
+</html>
