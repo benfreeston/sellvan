@@ -1,12 +1,15 @@
-# Van Description
+# 2017 Mercedes Sprinter 314d MWB Camper Van
+
+**Price: £32,995** | **54,000 miles** | **New MOT and service**
+**Location: South Devon** - any inspection welcome
 
 A no-expense spared conversion focusing on safety, convenience, reliability and creating something that works as well for a large family as a couple on the road.
 
 ## Family
 
-4 x Adult Sleeping Birth / 6 x Crash Tested Belted Seats - can sleep and seat six at a push, five with relative ease.
+4 x Adult Sleeping Berth / 6 x Crash Tested Belted Seats - can sleep and seat six at a push, five with relative ease.
 
-Searching for something suitable for two parents and two children I found very little. Most conversions look great but have neither beds nor travelling seats or have made extremely dubious design decisions to achieve this. Bolting rigid structure across the body creates stress (the van is designed to flex) and won't last and home made seating can look nice but offers nothing in a collision. For this van we constructed a floating upper bed that uses parallel walls bolted directly the body. The bed can be raised and lowered to offer a true 2 x double bed. A RIB Altair crash tested seat below converts from offering three belted seats to a second double bed.
+Searching for something suitable for two parents and two children I found very little. Most conversions look great but have neither beds nor travelling seats or have made extremely dubious design decisions to achieve this. Bolting rigid structure across the body creates stress (the van is designed to flex) and won't last and home-made seating can look nice but offers nothing in a collision. For this van we constructed a floating upper bed that uses parallel walls bolted directly to the body. The bed can be raised and lowered to offer a true 2 x double bed. A RIB Altair crash tested seat below converts from offering three belted seats to a second double bed.
 
 Given the six travelling seats I've used a roof mounted tent to travel with two adults and four children, or had my younger son sleep across the front seats which is also comfortable and workable. On this basis sleeps and drives six is achievable!
 
@@ -20,17 +23,17 @@ The van is fully insulated with high thermal grade materials - celetex under the
 
 Dual hob and large fridge
 
-A dometic dual hob is fed by a campinggaz 907 gas cylinder below the counter. This is the most widely available option with refills in every European supermarket or garage and same in the UK. A cylinder lasts a long time but equally can be swapped out easily. The gas sits in a sealed, metal gas cupboard with ventilation at the bottom outside the van - an essential safety step. The hob and sink give plenty of space to cook, there's kitchen lighting above and the Maxair fan ventilates effectively. There's a large dometic 12v fridge that comfortably runs from the solar system with a freezer section. Water is from a tank behind the drivers seat and an electric tape pulls from this when opened. The sink drains externally and there's a greywater can stored under the back seats if you're parked where this needs to be captured.
+A dometic dual hob is fed by a campinggaz 907 gas cylinder below the counter. This is the most widely available option with refills in every European supermarket or garage and same in the UK. A cylinder lasts a long time but equally can be swapped out easily. The gas sits in a sealed, metal gas cupboard with ventilation at the bottom outside the van - an essential safety step. The hob and sink give plenty of space to cook, there's kitchen lighting above and the Maxair fan ventilates effectively. There's a large dometic 12v fridge that comfortably runs from the solar system with a freezer section. Water is from a tank behind the drivers seat and an electric tap pulls from this when opened. The sink drains externally and there's a greywater can stored under the back seats if you're parked where this needs to be captured.
 
 ## Toilet
 
-There's a simple sealed toilet under the back seats that can brought out at night or as needed and emptied when full into a normal toilet or waste discharge.
+There's a simple sealed toilet under the back seats that can be brought out at night or as needed and emptied when full into a normal toilet or waste discharge.
 
 ## Electrics
 
 Off-grid solar and large backup battery
 
-No expense was spared on the electrical setup. All wiring is carefully laid and sheathed to ensure longevity. A 125ah lithium battery runs everything, this is charged from the solar and also directly from the engine. Conversely it keeps the van battery charged should it need it. There's a hook-up to charge from an external source, although we never needed this - the van will easily run 4+ days on solar with heating, lighting and fridge without driving or charging. There's an isolated internal mains socket from the hookup should you want it. There are dimable 12v lights throughout and ample USB sockets to charge or run devices. The electrics have bluetooth monitoring via an app. The electrics are all concealed with an easy to access panel if you wanted to add anything or modify anything.
+No expense was spared on the electrical setup. All wiring is carefully laid and sheathed to ensure longevity. A 125ah lithium battery runs everything, this is charged from the solar and also directly from the engine. Conversely it keeps the van battery charged should it need it. There's a hook-up to charge from an external source, although we never needed this - the van will easily run 4+ days on solar with heating, lighting and fridge without driving or charging. There's an isolated internal mains socket from the hookup should you want it. There are dimmable 12v lights throughout and ample USB sockets to charge or run devices. The electrics have bluetooth monitoring via an app. The electrics are all concealed with an easy to access panel if you wanted to add anything or modify anything.
 
 ## Security
 
@@ -44,4 +47,4 @@ There's a large locker over the cab, cupboards under and above the kitchen and t
 
 ## Driving
 
-Low mileage and serviced comprehensively and annually. Cruise control for longer trips. Reversing camera for visibility. It drives great and is efficient for a vehicle this size. The cab and body have additional acoustic proofing to ensure it feels more like a car than a van.
+54,000 miles and serviced comprehensively and annually with a new MOT. Cruise control for longer trips. Reversing camera for visibility. It drives great and is efficient for a vehicle this size. The cab and body have additional acoustic proofing to ensure it feels more like a car than a van.
