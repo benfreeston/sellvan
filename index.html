@@ -36,7 +36,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            opacity: 0;
+            transition: opacity 1.2s ease;
         }
+
+        .hero img.active { opacity: 1; }
 
         .hero-overlay {
             position: relative;
@@ -98,9 +102,16 @@
         }
 
         .intro {
-            padding: 4rem 0 3rem;
+            padding: 4rem 0 2rem;
             font-size: 1.2rem;
             color: #333;
+        }
+
+        .intro-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 2rem;
             border-bottom: 1px solid #eee;
         }
 
@@ -138,24 +149,44 @@
             margin-top: 1rem;
         }
 
-        /* Photo gallery */
-        .gallery {
-            padding: 3.5rem 0;
-        }
-
-        .gallery-grid {
+        .included-list {
+            list-style: none;
+            margin-top: 1rem;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 4px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 0.5rem 1.5rem;
         }
 
-        .gallery-grid .photo {
+        .included-list li {
+            color: #444;
+            font-size: 1.02rem;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .included-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+
+        /* Section thumbnails */
+        .thumbs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 6px;
+            margin-top: 1.5rem;
+        }
+
+        .thumbs .thumb {
             aspect-ratio: 4/3;
-            background: #f0f0f0;
             overflow: hidden;
+            background: #f0f0f0;
+            cursor: pointer;
         }
 
-        .gallery-grid .photo img {
+        .thumbs .thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -163,9 +194,7 @@
             transition: transform 0.3s ease;
         }
 
-        .gallery-grid .photo img:hover {
-            transform: scale(1.03);
-        }
+        .thumbs .thumb:hover img { transform: scale(1.05); }
 
         /* Lightbox */
         .lightbox {
@@ -263,7 +292,7 @@
             .container { padding: 0 1.25rem; }
             .intro { padding: 3rem 0 2rem; font-size: 1.05rem; }
             .section { padding: 2.5rem 0; }
-            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+            .thumbs { grid-template-columns: 1fr 1fr; gap: 4px; }
         }
     </style>
 </head>
@@ -271,11 +300,10 @@
 
     <!-- Hero image -->
     <div class="hero">
-        <!-- Replace src with your hero photo -->
-        <img src="photos/hero.jpg" alt="2017 Mercedes Sprinter 314d MWB Camper Van">
+        <img class="active" src="images/hero/Screenshot 2026-04-15 at 09.45.13.png" alt="2017 Mercedes Sprinter 314d MWB Camper Van">
         <div class="hero-overlay">
-            <h1>2017 Mercedes Sprinter 314d MWB</h1>
-            <div class="subtitle">A no-expense spared camper van conversion</div>
+            <h1>Six seat, four berth family camper</h1>
+            <div class="subtitle">2017 Mercedes Sprinter 314d MWB &mdash; a no-expense spared conversion</div>
         </div>
     </div>
 
@@ -302,15 +330,7 @@
     <!-- Intro -->
     <div class="container">
         <p class="intro">A no-expense spared conversion focusing on safety, convenience, reliability and creating something that works as well for a large family as a couple on the road.</p>
-    </div>
-
-    <!-- Photo gallery -->
-    <div class="gallery">
-        <div class="gallery-grid">
-            <!-- Add your photos here. Example: -->
-            <!-- <div class="photo"><img src="photos/01.jpg" alt="Interior view"></div> -->
-            <!-- <div class="photo"><img src="photos/02.jpg" alt="Kitchen"></div> -->
-        </div>
+        <img class="intro-image" src="images/kitchen/Screenshot 2026-04-15 at 09.53.28.png" alt="Interior of the camper van">
     </div>
 
     <!-- Sections -->
@@ -319,9 +339,17 @@
         <div class="section">
             <h2>Family</h2>
             <div class="tagline">4 x Adult Sleeping Berth / 6 x Crash Tested Belted Seats</div>
-            <p>Can sleep and seat six at a push, five with relative ease. Searching for something suitable for two parents and two children I found very little. Most conversions look great but have neither beds nor travelling seats or have made extremely dubious design decisions to achieve this. Bolting rigid structure across the body creates stress (the van is designed to flex) and won't last and home-made seating can look nice but offers nothing in a collision.</p>
+            <p>Can sleep and seat six at a push, five with relative ease. Searching for something suitable for two parents and three children I found very little. Most conversions look great but have neither beds nor travelling seats or have made extremely dubious design decisions to achieve this. Bolting rigid structure across the body creates stress (the van is designed to flex) and won't last and home-made seating can look nice but offers nothing in a collision.</p>
             <p>For this van we constructed a floating upper bed that uses parallel walls bolted directly to the body. The bed can be raised and lowered to offer a true 2 x double bed. A RIB Altair crash tested seat below converts from offering three belted seats to a second double bed.</p>
             <p>Given the six travelling seats I've used a roof mounted tent to travel with two adults and four children, or had my younger son sleep across the front seats which is also comfortable and workable. On this basis sleeps and drives six is achievable!</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/family/IMG_8674.jpg" alt=""></div>
+                <div class="thumb"><img src="images/family/IMG_8675.jpg" alt=""></div>
+                <div class="thumb"><img src="images/family/IMG_8680.jpg" alt=""></div>
+                <div class="thumb"><img src="images/family/IMG_8683.jpg" alt=""></div>
+                <div class="thumb"><img src="images/family/IMG_8684.jpg" alt=""></div>
+                <div class="thumb"><img src="images/family/IMG_8685.jpg" alt=""></div>
+            </div>
         </div>
 
         <div class="section">
@@ -336,6 +364,17 @@
             <div class="tagline">Dual hob and large fridge</div>
             <p>A Dometic dual hob is fed by a Campingaz 907 gas cylinder below the counter. This is the most widely available option with refills in every European supermarket or garage and same in the UK. A cylinder lasts a long time but equally can be swapped out easily. The gas sits in a sealed, metal gas cupboard with ventilation at the bottom outside the van &mdash; an essential safety step.</p>
             <p>The hob and sink give plenty of space to cook, there's kitchen lighting above and the Maxair fan ventilates effectively. There's a large Dometic 12v fridge that comfortably runs from the solar system with a freezer section. Water is from a tank behind the driver's seat and an electric tap pulls from this when opened. The sink drains externally and there's a greywater can stored under the back seats if you're parked where this needs to be captured.</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/kitchen/IMG_8665.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8666.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8667.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8668.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8669.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8670.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8671.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8676.jpg" alt=""></div>
+                <div class="thumb"><img src="images/kitchen/IMG_8679.jpg" alt=""></div>
+            </div>
         </div>
 
         <div class="section">
@@ -348,6 +387,10 @@
             <div class="tagline">Off-grid solar and large backup battery</div>
             <p>No expense was spared on the electrical setup. All wiring is carefully laid and sheathed to ensure longevity. A 125Ah lithium battery runs everything, this is charged from the solar and also directly from the engine. Conversely it keeps the van battery charged should it need it.</p>
             <p>There's a hook-up to charge from an external source, although we never needed this &mdash; the van will easily run 4+ days on solar with heating, lighting and fridge without driving or charging. There's an isolated internal mains socket from the hookup should you want it. There are dimmable 12v lights throughout and ample USB sockets to charge or run devices. The electrics have Bluetooth monitoring via an app. The electrics are all concealed with an easy to access panel if you wanted to add anything or modify anything.</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/electrics/IMG_8662.jpg" alt=""></div>
+                <div class="thumb"><img src="images/electrics/IMG_8663.jpg" alt=""></div>
+            </div>
         </div>
 
         <div class="section">
@@ -359,11 +402,46 @@
         <div class="section">
             <h2>Storage</h2>
             <p>There's a large locker over the cab, cupboards under and above the kitchen and through the living area. Under the main seat in both front and back are large storage areas and there's dry and wet storage (wetsuits etc) in the back under the bed. A huge Rhino roof rack means altogether you can take way more than you need with you on any trip. The second bed makes an excellent surfboard rack if travelling as a couple.</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/storage/IMG_8672.jpg" alt=""></div>
+                <div class="thumb"><img src="images/storage/IMG_8673.jpg" alt=""></div>
+                <div class="thumb"><img src="images/storage/IMG_8677.jpg" alt=""></div>
+                <div class="thumb"><img src="images/storage/IMG_8678.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Outside</h2>
+            <p>A full Fiamma wind-out awning along the sliding-door side gives you a huge covered outdoor space in minutes &mdash; perfect for cooking, eating or sheltering from sun or rain. On the roof, a heavy-duty Rhino roof rack runs the full length of the van, ideal for surfboards, paddleboards, a roof tent, or just extra gear when travelling as a family.</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/outside/IMG_1178.jpg" alt=""></div>
+                <div class="thumb"><img src="images/outside/IMG_3462.jpg" alt=""></div>
+                <div class="thumb"><img src="images/outside/IMG_3476.jpg" alt=""></div>
+            </div>
         </div>
 
         <div class="section">
             <h2>Driving</h2>
             <p>54,000 miles and serviced comprehensively and annually with a new MOT. Cruise control for longer trips. Reversing camera for visibility. It drives great and is efficient for a vehicle this size. The cab and body have additional acoustic proofing to ensure it feels more like a car than a van.</p>
+            <div class="thumbs">
+                <div class="thumb"><img src="images/driving/IMG_5142.jpg" alt=""></div>
+                <div class="thumb"><img src="images/driving/IMG_8686.jpg" alt=""></div>
+                <div class="thumb"><img src="images/driving/IMG_8687.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Included</h2>
+            <p>The van is sold ready to camp with:</p>
+            <ul class="included-list">
+                <li>Folding chairs &amp; table</li>
+                <li>Levelling chocks</li>
+                <li>Awning</li>
+                <li>All kitchen equipment</li>
+                <li>Toilet &amp; greywater tanks</li>
+                <li>Storage boxes</li>
+                <li>Hook-up cables and adapter</li>
+            </ul>
         </div>
 
     </div>
@@ -389,10 +467,21 @@
     </div>
 
     <script>
-        // Lightbox
+        // Hero rotating carousel
+        const heroImgs = document.querySelectorAll('.hero img');
+        if (heroImgs.length > 1) {
+            let heroIdx = 0;
+            setInterval(() => {
+                heroImgs[heroIdx].classList.remove('active');
+                heroIdx = (heroIdx + 1) % heroImgs.length;
+                heroImgs[heroIdx].classList.add('active');
+            }, 4500);
+        }
+
+        // Lightbox across all section thumbs
         const lightbox = document.getElementById('lightbox');
         const lbImg = lightbox.querySelector('img');
-        const photos = document.querySelectorAll('.gallery-grid .photo img');
+        const photos = document.querySelectorAll('.thumbs .thumb img');
         let currentIndex = 0;
 
         photos.forEach((img, i) => {
